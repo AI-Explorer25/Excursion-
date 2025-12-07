@@ -23,7 +23,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.8rem; /* slightly bigger */
+    font-size: 2.8rem;
     letter-spacing: 1px;
 }
 
@@ -59,14 +59,36 @@ main section:hover {
     transform: translateY(-5px);
 }
 
-/* Section titles */
-main section h1 {
+/* Intro Section */
+.intro {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
     text-align: center;
+}
+
+.intro-title {
+    font-size: 2.8rem;
     color: #bb86fc;
-    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.intro-text {
+    font-size: 1.25rem;
+    color: #e0e0e0;
     margin-bottom: 10px;
 }
 
+.intro-subtext {
+    font-size: 1rem;
+    color: #90caf9;
+}
+
+/* Section titles */
 main section h2 {
     text-align: center;
     color: #bb86fc;
@@ -81,7 +103,7 @@ main section p {
     color: #e0e0e0;
 }
 
-/* Description above image */
+/* Description above images */
 .description {
     text-align: center;
     font-size: 1.1rem;
@@ -103,14 +125,14 @@ main section video {
 .image-container.phone img {
     width: 50px;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     display: block;
 }
 
 /* Video adjustments */
 .video-container video {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px; /* smaller to match phone display */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
@@ -131,8 +153,12 @@ footer {
         font-size: 2rem;
     }
 
-    main section h1 {
+    .intro-title {
         font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
     }
 
     main section h2 {
