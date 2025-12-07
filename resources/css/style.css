@@ -1,0 +1,106 @@
+/* -------------------------------
+   EXCURSION - Dark Modern Theme
+---------------------------------*/
+
+/* Base page styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Header */
+header {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #90caf9;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+header nav a:hover {
+    color: #f48fb1;
+    text-decoration: underline;
+}
+
+/* Main sections */
+main section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+
+main section:hover {
+    transform: translateY(-5px);
+}
+
+/* Section titles */
+main section h2 {
+    text-align: center;
+    color: #bb86fc;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+main section p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* Center images and video */
+main section img,
+main section video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 90%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #1f1f1f;
+    color: #90caf9;
+    border-top: 2px solid #333;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main section h2 {
+        font-size: 1.5rem;
+    }
+}
