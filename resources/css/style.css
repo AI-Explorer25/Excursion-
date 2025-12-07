@@ -2,7 +2,7 @@
    EXCURSION - Dark Modern Theme
 ---------------------------------*/
 
-/* Base page styles */
+/* Base styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -23,7 +23,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 1px;
 }
 
@@ -44,7 +44,7 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Main sections */
+/* Sections */
 main section {
     padding: 40px 20px;
     max-width: 900px;
@@ -55,36 +55,72 @@ main section {
     transition: transform 0.2s;
 }
 
-/* Remove hover effect for intro and download sections */
-main section.intro,
-main section.download {
-    box-shadow: none;
-    transform: none;
+main section:hover {
+    transform: translateY(-5px);
 }
 
-/* Section titles */
-main section h2 {
+/* Intro text */
+.intro h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro .subtitle {
+    font-size: 1.5rem;
     text-align: center;
     color: #bb86fc;
-    font-size: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-/* Paragraphs */
-main section p {
-    text-align: center;
+.intro .description {
     font-size: 1.1rem;
-    color: #e0e0e0;
+    text-align: center;
 }
 
-/* Center images and video */
-main section img,
-main section video {
-    display: block;
-    margin: 20px auto;
+/* Media (video & images) */
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container video {
+    width: 300px; /* fits phone width */
+    height: auto;
     border-radius: 8px;
-    max-width: 90%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.image-container.phone img {
+    width: 300px; /* matches video width */
+}
+
+/* Download section */
+.download {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.download .platform {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.download .cta {
+    color: #90caf9;
+    font-weight: 600;
 }
 
 /* Footer */
@@ -97,17 +133,27 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro .subtitle {
+        font-size: 1.2rem;
     }
 
     main section h2 {
         font-size: 1.5rem;
     }
 
-    main section p {
-        font-size: 1rem;
+    .video-container video,
+    .image-container.phone img {
+        width: 100%;
+        max-width: 300px;
     }
 }
